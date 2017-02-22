@@ -1,0 +1,19 @@
+{
+  "name": "zazu-template",
+  "version": "1.0.0",
+  "description": "Zazu Template for starting your own plugin.",
+  "main": "zazu.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha ./test"
+  },
+  "license": "Unlicense",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.13.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^2.5.3"
+  }
+}
