@@ -12,6 +12,14 @@
         "args": "Optional",
         "script": "src/start.js",
         "connections": ["RegisterStart"]
+      }, {
+        "id": "timetrack stop",
+        "type": "PrefixScript",
+        "prefix": ":stop",
+        "space": false,
+        "args": "Optional",
+        "script": "src/stop.js",
+        "connections": ["RegisterStop"]
       }
     ],
     "output": [
@@ -19,6 +27,10 @@
         "id": "RegisterStart",
         "type": "UserScript",
         "script": "src/registerStart.js"
+      }, {
+        "id": "RegisterStop",
+        "type": "UserScript",
+        "script": "src/registerStop.js"
       }
     ]
   }
