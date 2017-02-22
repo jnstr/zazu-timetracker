@@ -2,11 +2,11 @@ module.exports = (pluginContext) => {
     return (project, env = {}) => {
         return new Promise((resolve, reject) => {
             // get the projectName
-            const projectName = trim(project);
+            let projectName = project.trim();
 
             let title = 'Start tracking time';
-            if (projectName) {
-                title += ` for ${projectName}`;
+            if (projectName != '') {
+                title += ` for "${projectName}"`;
             }
 
             resolve([

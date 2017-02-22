@@ -11,14 +11,14 @@
         "space": false,
         "args": "Optional",
         "script": "src/start.js",
-        "connections": ["RegisterTime"]
+        "connections": ["RegisterStart"]
       }
     ],
     "output": [
       {
-        "id": "GoHome",
-        "type": "OpenInBrowser",
-        "url": "https://github.com/tinytacoteam/zazu-template"
+        "id": "RegisterStart",
+        "type": "UserScript",
+        "script": "src/registerStart.js"
       }
     ]
   }
