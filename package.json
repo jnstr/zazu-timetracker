@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "Simple zazu timetracker",
   "main": "zazu.js",
-  "scripts": {
-  },
+  "scripts": {},
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "sugar-date": "^2.0.4"
   }
 }
