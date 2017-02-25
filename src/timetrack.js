@@ -48,6 +48,12 @@ const registerStop = () => {
     }
 };
 
+const getHistory = (from, to) => {
+    let items = Array.prototype.slice.call(data.default);
+    items.reverse();
+    return items;
+};
+
 /**
  * Save the data to the json file
  */
@@ -60,5 +66,6 @@ module.exports = {
     loadData,
     registerStart,
     registerStop,
+    getHistory,
     save
 }

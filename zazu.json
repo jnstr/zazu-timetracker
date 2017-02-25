@@ -20,6 +20,13 @@
         "args": "Optional",
         "script": "src/stop.js",
         "connections": ["RegisterStop"]
+      }, {
+        "id": "timetrack history",
+        "type": "PrefixScript",
+        "prefix": ":hist",
+        "space": false,
+        "args": "Optional",
+        "script": "src/history.js"
       }
     ],
     "output": [
