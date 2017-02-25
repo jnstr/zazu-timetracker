@@ -5,9 +5,15 @@ const calculateDuration = require('./calculateDuration');
 module.exports = (pluginContext) => {
     return (project, env = {}) => {
         return new Promise((resolve, reject) => {
+            // we don't want to show all history, do we?
+            const historyLimit = parseInt(env['historyNumItems'] || 25);
+
+            // load the data from the json file
             timetrack.loadData();
-            resolve(timetrack.getHistory().map(entry => {
-                try {
+
+            // render the history items
+            resolve(timetrack.getHistory().slice(0, historyLimit).map(entry => {
+
                 // get the duration of the entry
                 let duration = 'Running';
                 if ('stop' in entry) {
@@ -26,9 +32,7 @@ module.exports = (pluginContext) => {
                     title: `[${duration}] ${project}`,
                     subtitle: `started on ${startDate}`
                 }
-                } catch (e) {
-                    alert('fount: ' + e);
-                }
+
             }));
         });
     }
