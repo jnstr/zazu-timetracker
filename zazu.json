@@ -25,7 +25,8 @@
         "type": "PrefixScript",
         "prefix": ":hist",
         "space": false,
-        "args": "Optional",
+        "args": "None",
+        "debounce": 100,
         "script": "src/history.js"
       }
     ],
