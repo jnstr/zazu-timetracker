@@ -6,7 +6,7 @@ module.exports = (pluginContext) => {
     return (project, env = {}) => {
         return new Promise((resolve, reject) => {
             // we don't want to show all history, do we?
-            const historyLimit = parseInt(env['historyNumItems'] || 25);
+            const historyLimit = parseInt(env['historyNumItems'] || 5);
 
             // load the data from the json file
             timetrack.loadData();
@@ -59,6 +59,11 @@ module.exports = (pluginContext) => {
                     subtitle: `Select to copy the summary`,
                     preview: `<div style="font-family: sans-serif; font-size: 12px;">${summary.join('<br>')}</div>`
                 });
+
+                // please don't show too much entries
+                if (result.length >= historyLimit) {
+                    break;
+                }
             }
 
             resolve(result);
