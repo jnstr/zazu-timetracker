@@ -58,6 +58,11 @@ const getHistory = (from, to) => {
  * Save the data to the json file
  */
 const save = () => {
+    // Clear data before saving
+    while (data.default.length > 500) {
+        data.default.shift();
+    }
+
     return jsonFile.writeFileSync(filePath, data);
 };
 
