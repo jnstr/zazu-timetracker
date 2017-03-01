@@ -48,6 +48,17 @@ const registerStop = () => {
     }
 };
 
+/**
+ * Delete an entry from the list by a given start timetstamp
+ */
+const registerDelete = (startTs) => {
+    // only keep the entries with a different start ts
+    data.default = data.default.filter(entry => entry.start != startTs);
+}
+
+/**
+ * Get the items from the history
+ */
 const getHistory = (from, to) => {
     let items = Array.prototype.slice.call(data.default);
     items.reverse();
@@ -72,5 +83,6 @@ module.exports = {
     registerStart,
     registerStop,
     getHistory,
+    registerDelete,
     save
 }
