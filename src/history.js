@@ -57,7 +57,8 @@ module.exports = (pluginContext) => {
                     icon: 'fa-clock-o',
                     title: day,
                     subtitle: `Select to copy the summary`,
-                    preview: `<div style="font-family: sans-serif; font-size: 12px;">${summary.join('<br>')}</div>`
+                    preview: `<div style="font-family: sans-serif; font-size: 12px;">${summary.join('<br>')}</div>`,
+                    value: summary.join('\n')
                 });
 
                 // please don't show too much entries

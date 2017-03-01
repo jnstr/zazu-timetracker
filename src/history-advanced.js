@@ -61,6 +61,7 @@ module.exports = (pluginContext) => {
                         icon: 'fa-clock-o',
                         title: `[${duration}] ${project}`,
                         subtitle: `Started on ${startDate}`,
+                        value: `[${duration}] ${project} (start: ${startDate})`
                     }
                 });
 
