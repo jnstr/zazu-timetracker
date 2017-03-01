@@ -46,3 +46,14 @@ Add `jnstr/zazu-timetracker` inside of `plugins` block of your `~/.zazurc.json` 
   ]
 }
 ```
+
+## Screenshots
+
+![Start unnamed](./assets/start-unnamed.png) 
+![Start named](./assets/start-named.png)  
+![Stop](./assets/stop.png)  
+![History](./assets/hist-unnamed.png)  
+![History date](./assets/hist-date.png)  
+![History text](./assets/hist-text.png)  
+![Delete](./assets/delete.png)  
+
