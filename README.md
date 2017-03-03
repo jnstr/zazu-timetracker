@@ -8,7 +8,7 @@ This is a simple zazu plugin for tracking time. It makes it easy to track the ti
 
 Start tracking time. This command supporst an optional project name.
 
-`:start`: start tracking time without a project name  it easier to track small
+`:start`: start tracking time without a project name  it easier to track small  
 `:start Writing readme for zazu timetrack plugin`: Start tracking time for the given project name.
 
 Starting the timetracker will automatically stop the currently running time tracker.

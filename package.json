@@ -7,6 +7,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "jsonfile": "^2.4.0",
     "sugar-date": "^2.0.4"
   }
 }
