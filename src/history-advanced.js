@@ -55,13 +55,18 @@ module.exports = (pluginContext) => {
                     const project = entry.project || 'No project';
 
                     // when did we start?
-                    const startDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%H:%M:%S');
+                    const startDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%I:%M:%S %p');
+
+                    let stopDate = 'now';
+                    if ('stop' in entry) {
+                        stopDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%I:%M:%S %p');
+                    }
 
                     return {
                         icon: 'assets/history.svg',
                         title: `[${duration}] ${project}`,
-                        subtitle: `Started on ${startDate}`,
-                        value: `[${duration}] ${project} (start: ${startDate})`
+                        subtitle: `from ${startDate} till  ${stopDate}`,
+                        value: `[${duration}] ${project} (from ${startDate} till ${stopDate})`
                     }
                 });
 

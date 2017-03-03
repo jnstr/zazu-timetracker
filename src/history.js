@@ -47,9 +47,14 @@ module.exports = (pluginContext) => {
                     const project = entry.project || 'No project';
 
                     // when did we start?
-                    const startDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%H:%M:%S');
+                    const startDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%I:%M:%S %p');
 
-                    return `[${duration}] ${project} (start: ${startDate})`;
+                    let stopDate = 'now';
+                    if ('stop' in entry) {
+                        stopDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%I:%M:%S %p');
+                    }
+
+                    return `[${duration}] ${project} (from ${startDate} till ${stopDate})`;
                 })
 
                 // const historyDate = Sugar.Date.create(dayStart).format('%F');
