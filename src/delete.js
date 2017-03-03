@@ -30,7 +30,7 @@ module.exports = (pluginContext) => {
 
                     // we use the start ts as unique id because it's unique
                     return {
-                        icon: 'fa-clock-o',
+                        icon: 'assets/history.svg',
                         title: `[${duration}] ${project}`,
                         subtitle: `Started on ${startDate}, click to delete`,
                         value: entry.start
@@ -41,7 +41,7 @@ module.exports = (pluginContext) => {
             if (!historyItems.length) {
                 return resolve([
                     {
-                        icon: 'fa-clock-o',
+                        icon: 'assets/history.svg',
                         title: `No entries found to delete`,
                         value: false
                     }

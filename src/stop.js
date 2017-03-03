@@ -3,7 +3,7 @@ module.exports = (pluginContext) => {
         return new Promise((resolve, reject) => {
             resolve([
                 {
-                    icon: 'fa-clock-o',
+                    icon: 'assets/stop.svg',
                     title: 'Stop time tracker',
                     subtitle: 'Click to stop the currently active time tracker'
                 },

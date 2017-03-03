@@ -54,7 +54,7 @@ module.exports = (pluginContext) => {
 
                 // const historyDate = Sugar.Date.create(dayStart).format('%F');
                 result.push({
-                    icon: 'fa-clock-o',
+                    icon: 'assets/history.svg',
                     title: day,
                     subtitle: `Select to copy the summary`,
                     preview: `<div style="font-family: sans-serif; font-size: 12px;">${summary.join('<br>')}</div>`,

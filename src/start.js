@@ -11,7 +11,7 @@ module.exports = (pluginContext) => {
 
             resolve([
                 {
-                    icon: 'fa-clock-o',
+                    icon: 'assets/start.svg',
                     title: title,
                     subtitle: 'Click to start timetracker',
                     value: projectName

@@ -12,7 +12,7 @@ module.exports = (pluginContext) => {
             if ((query.match(/^\d{4}-\d{2}-\d{2}$/) === null && query != 'today' && query != 'yesterday') || !Sugar.Date.isValid(Sugar.Date.create(query))) {
                 return resolve([
                     {
-                        icon: 'fa-clock-o',
+                        icon: 'assets/history.svg',
                         title: 'Search timetracking history',
                         subtitle: `Enter a date (yyyy-mm-dd) or quick filter for "today" or "yesterday"`,
                         value: ''
@@ -58,7 +58,7 @@ module.exports = (pluginContext) => {
                     const startDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%H:%M:%S');
 
                     return {
-                        icon: 'fa-clock-o',
+                        icon: 'assets/history.svg',
                         title: `[${duration}] ${project}`,
                         subtitle: `Started on ${startDate}`,
                         value: `[${duration}] ${project} (start: ${startDate})`
@@ -72,7 +72,7 @@ module.exports = (pluginContext) => {
 
                 return resolve([
                     {
-                        icon: 'fa-clock-o',
+                        icon: 'assets/history.svg',
                         title: `No entries found for ${day}`,
                         value: ''
                     }
