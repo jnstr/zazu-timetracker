@@ -1,6 +1,6 @@
 # zazu timetracker
 
-This is a simple zazu plugin for tracking time. It makes it easy to track the time you spend on projects during the day.
+This is a simple [Zazu](http://zazuapp.org) plugin for tracking time. It makes it easy to track the time you spend on projects during the day.
 
 ## Usage
 
