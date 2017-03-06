@@ -62,7 +62,7 @@ module.exports = (pluginContext) => {
                     icon: 'assets/history.svg',
                     title: day,
                     subtitle: `Select to copy the summary`,
-                    preview: `<div style="font-family: sans-serif; font-size: 12px;">${summary.join('<br>')}</div>`,
+                    preview: `<div style="font-family: sans-serif; font-size: 12px;"><ul style="padding-left: 15px;;"><li>${summary.join('</li><li>')}</li></ul></div>`,
                     value: summary.join('\n')
                 });
 
