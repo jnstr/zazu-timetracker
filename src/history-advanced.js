@@ -59,7 +59,7 @@ module.exports = (pluginContext) => {
 
                     let stopDate = 'now';
                     if ('stop' in entry) {
-                        stopDate = Sugar.Date.format(Sugar.Date.create(entry.start), '%I:%M:%S %p');
+                        stopDate = Sugar.Date.format(Sugar.Date.create(entry.stop), '%I:%M:%S %p');
                     }
 
                     return {
