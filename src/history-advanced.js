@@ -1,5 +1,5 @@
 const timetrack = require('./timetrack');
-const Sugar = require('sugar-date');
+require('../libs/sugar-custom.min');
 const calculateDuration = require('./calculateDuration');
 
 module.exports = (pluginContext) => {
